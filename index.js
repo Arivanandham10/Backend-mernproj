@@ -13,7 +13,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000","https://frontend-nqchx4ike-arivnandhams-projects.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
